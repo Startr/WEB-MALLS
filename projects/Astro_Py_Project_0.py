@@ -1,3 +1,6 @@
+# Runs on the https://missions.astro-pi.org/mz/code_submissions/new
+# Also runs on https://www.esa.int/Education/AstroPI/Astro_PI_Sense_HAT_emulator
+
 # Import the libraries
 from sense_hat import SenseHat
 from time import sleep
