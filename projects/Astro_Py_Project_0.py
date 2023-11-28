@@ -15,33 +15,33 @@ k = (0,0,0)
 b = (0,98,225)
 g = (0,225,0)
 w = (225,225,225)
-
+ww =(12,12,12)
 
 # An 16x8 multidimensional list
 # pixel art map of 'earth'
 
 #When working outside of Colab make sure to use real rgb values
 earth_pixels = [
- [w, b, w, b, w, b, w, g, w, b, g, w, g, w, b, w],
- [b, b, g, b, b, g, b, b, g, b, b, g, g, b, b, g],
- [b, b, g, g, g, g, b, g, g, g, g, g, g, b, b, b],
- [b, b, b, g, g, b, b, b, b, g, g, g, g, b, b, b],
- [b, b, b, g, b, g, b, g, g, g, b, g, g, b, b, b],
- [g, b, b, b, g, b, b, g, g, b, b, g, b, b, g, g],
- [g, b, b, b, g, b, b, g, g, b, b, b, b, b, g, g],
- [b, w, b, w, b, w, b, w, g, w, b, w, b, w, g, w],
+ [b, b, b, b, b, b, b, c, b, b, c, b, c, b, b, b],
+ [b, b, c, b, b, c, b, b, c, b, b, c, c, b, b, c],
+ [b, b, c, c, c, c, b, c, c, c, c, c, c, b, b, b],
+ [b, b, b, c, c, b, b, b, b, c, c, c, c, b, b, b],
+ [b, b, b, c, b, c, b, c, c, c, b, c, c, b, b, b],
+ [c, b, b, b, c, b, b, c, c, b, b, c, b, b, c, c],
+ [c, b, b, b, c, b, b, c, c, b, b, b, b, b, c, c],
+ [b, b, b, b, b, b, b, b, c, b, b, b, b, b, c, w],
 ]
 
 # A 8x8 multidimensional list pixel art map of circle
 mask_pixels = [
- [k, k, w, w, w, w, k, k],
- [k, w, w, w, w, w, w, k],
- [w, w, w, w, w, w, w, w],
- [w, w, w, w, w, w, w, w],
- [w, w, w, w, w, w, w, w],
- [w, w, w, w, w, w, w, w],
- [k, w, w, w, w, w, w, k],
- [k, k, w, w, w, w, k, k],
+ [k, k, ww, w, w, ww, k, k],
+ [k, ww, ww, ww, ww, ww, ww, k],
+ [ww, ww, ww, ww, ww, ww, ww, ww],
+ [ww, ww, ww, ww, ww, ww, ww, ww],
+ [ww, ww, ww, ww, ww, ww, ww, ww],
+ [ww, ww, ww, ww, ww, ww, ww, ww],
+ [k, ww, ww, ww, ww, ww, ww, k],
+ [k, k, ww, w, w, ww, k, k],
 ]
 
 
@@ -54,7 +54,9 @@ sense.set_rotation(270, False)
 sense.color.gain = 60 # Set the sensitivity of the sensor
 sense.color.integration_cycles = 64 # The interval at which the reading will be taken
 
-for i in range(28*15):
+
+#Our old image a static images
+for i in range(1*15):
     sc = sense.color
     c = (sc.red,sc.green,sc.blue)
     # Display the image
@@ -80,4 +82,52 @@ for i in range(28*15):
     # Display the image
     sense.set_pixels(world)
     sleep(1/15)
-sense.clear()
+
+
+#New animation of spining globe
+for i in range(32):
+
+    sc = sense.color
+    c = (sc.red,sc.green,sc.blue)
+
+    earth_pixels = [
+         [b, b, b, b, b, b, b, c, b, b, c, b, c, b, b, b],
+         [b, b, c, b, b, c, b, b, c, b, b, c, c, b, b, c],
+         [b, b, c, c, c, c, b, c, c, c, c, c, c, b, b, b],
+         [b, b, b, c, c, b, b, b, b, c, c, c, c, b, b, b],
+         [b, b, b, c, b, c, b, c, c, c, b, c, c, b, b, b],
+         [c, b, b, b, c, b, b, c, c, b, b, c, b, b, c, c],
+         [c, b, b, b, c, b, b, c, c, b, b, b, b, b, c, c],
+         [b, b, b, b, b, b, b, b, c, b, b, b, b, b, c, w],
+        ]
+    
+    view = ([list(islice(cycle(row), i, i+8)) for row in earth_pixels])
+    # test if there is a white pixel in world_pixels if so
+    # keep the pixel from view otherwise replace view's pixel
+    # with the black from world_pixels
+    view = [
+        [
+            view_pixel if mask_pixel == ww else mask_pixel
+            for view_pixel, mask_pixel in zip(view_row, mask_row)
+        ]
+        for view_row, mask_row in zip(view, mask_pixels)
+    ]
+    # Initialize an empty list to hold the concatenated items
+    concatenated_view_items = []
+    
+    # Iterate over each row in the 'view' matrix (assuming 'view' is a list of lists)
+    for row in view:
+        # Iterate over each item in the current row
+        for item in row:
+            # Append the current item to the list of concatenated items
+            concatenated_view_items.append(item)
+    
+    # Reverse the order of items in the concatenated list to get a reversed view
+    concatenated_view_items
+        
+    sense.set_pixels(concatenated_view_items)
+    sleep(0.4)
+
+    
+
+#sense.clear()
