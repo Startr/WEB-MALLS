@@ -5,13 +5,7 @@
 from sense_hat import SenseHat
 from time import sleep
 
-# Set up the Sense HAT
-sense = SenseHat()
-sense.set_rotation(270, False)
-
-# Set up the colour sensor
-sense.color.gain = 60 # Set the sensitivity of the sensor
-sense.color.integration_cycles = 64 # The interval at which the reading will be taken
+from itertools import cycle, islice
 
 # Add colour variables and image
 
@@ -21,6 +15,45 @@ k = (0,0,0)
 b = (0,98,225)
 g = (0,225,0)
 w = (225,225,225)
+
+
+# An 16x8 multidimensional list
+# pixel art map of 'earth'
+
+#When working outside of Colab make sure to use real rgb values
+earth_pixels = [
+ ['⬜️', '🟦', '⬜️', '🟦', '⬜️', '🟦', '⬜️', '🟩', '⬜️', '🟦', '🟩', '⬜️', '🟩', '⬜️', '🟦', '⬜️'],
+ ['🟦', '🟦', '🟩', '🟦', '🟦', '🟩', '🟦', '🟦', '🟩', '🟦', '🟦', '🟩', '🟩', '🟦', '🟦', '🟩'],
+ ['🟦', '🟦', '🟩', '🟩', '🟩', '🟩', '🟦', '🟩', '🟩', '🟩', '🟩', '🟩', '🟩', '🟦', '🟦', '🟦'],
+ ['🟦', '🟦', '🟦', '🟩', '🟩', '🟦', '🟦', '🟦', '🟦', '🟩', '🟩', '🟩', '🟩', '🟦', '🟦', '🟦'],
+ ['🟦', '🟦', '🟦', '🟩', '🟦', '🟩', '🟦', '🟩', '🟩', '🟩', '🟦', '🟩', '🟩', '🟦', '🟦', '🟦'],
+ ['🟩', '🟦', '🟦', '🟦', '🟩', '🟦', '🟦', '🟩', '🟩', '🟦', '🟦', '🟩', '🟦', '🟦', '🟩', '🟩'],
+ ['🟩', '🟦', '🟦', '🟦', '🟩', '🟦', '🟦', '🟩', '🟩', '🟦', '🟦', '🟦', '🟦', '🟦', '🟩', '🟩'],
+ ['🟦', '⬜️', '🟦', '⬜️', '🟦', '⬜️', '🟦', '⬜️', '🟩', '⬜️', '🟦', '⬜️', '🟦', '⬜️', '🟩', '⬜️'],
+]
+
+# A 8x8 multidimensional list pixel art map of circle
+mask_pixels = [
+ ['⬛️', '⬛️', '⬜️', '⬜️', '⬜️', '⬜️', '⬛️', '⬛️'],
+ ['⬛️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬛️'],
+ ['⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️'],
+ ['⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️'],
+ ['⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️'],
+ ['⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️'],
+ ['⬛️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬜️', '⬛️'],
+ ['⬛️', '⬛️', '⬜️', '⬜️', '⬜️', '⬜️', '⬛️', '⬛️'],
+]
+
+
+
+# Set up the Sense HAT
+sense = SenseHat()
+sense.set_rotation(270, False)
+
+# Set up the colour sensor
+sense.color.gain = 60 # Set the sensitivity of the sensor
+sense.color.integration_cycles = 64 # The interval at which the reading will be taken
+
 for i in range(28*15):
     sc = sense.color
     c = (sc.red,sc.green,sc.blue)
@@ -45,6 +78,6 @@ for i in range(28*15):
              k,k,k,k,k,k,k,k,]
     
     # Display the image
-    sense.set_pixels(frog)
+    sense.set_pixels(world)
     sleep(1/15)
 sense.clear()
