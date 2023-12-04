@@ -1,5 +1,11 @@
 {
     "dependencies": {
-      "@11ty/eleventy": "^2.0.1"
+        "@11ty/eleventy": "^2.0.1"
+    },
+    "scripts": {
+        "build": "eleventy --input=web",
+        "serve": "eleventy --input=web --serve",
+        "debug": "DEBUG=Eleventy* eleventy",
+        "deploy": "eleventy --input=web && git add . && git commit -m 'deploy' && git push"
     }
-  }
+}
