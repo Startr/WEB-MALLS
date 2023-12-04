@@ -1,8 +1,8 @@
 ---
 layout: mylayout.njk
 title: My Home Page
+description: This is my home page
 ---
-# {{ title }}
 
 Hi and hello to every body. 
 

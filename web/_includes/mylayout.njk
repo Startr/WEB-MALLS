@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://startr.style/style.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Malls.live - {{ title }}</title>
     </head>
-    <body>
+    <body 
+        style="--size:150%">
+        <header style="--bg:deepskyblue">
+            <h1>{{ title }}</h1>
+        </header>
+        <section style="--bg:dodgerblue">
+            <p>{{ description }}</p>
         {{ content | safe }}
-
-    <a href="https://malls.live">Go Home</a>
+        </section>
+        <section style="--bg:slateblue">
+            <p>© 2023 Malls.live and Startr LLC</p>
+            <a href="https://malls.live">Go Home</a>
+        </section>
+    
     </body>
 </html>
