@@ -5,6 +5,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Malls.live - {{ title }}</title>
+        <style>
+        h2{
+            column-span: all
+        }
+        </style>
     </head>
     <body 
         style="--size:150%">
@@ -12,7 +17,7 @@
             <h1>{{ title }}</h1>
         </header>
         <section style="--cc: 1; --cc-sm: 2;">
-            <div style="--shadow: 7">
+            <div style="--shadow: 7; --p: 0.6em">
                 <p>{{ description }}</p>
                 {{ content | safe }}
             </div>
