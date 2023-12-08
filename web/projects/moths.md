@@ -7,12 +7,14 @@ title: 🌜Moths🦋
 Introduction
 -------------
 
- ![](https://lh7-us.googleusercontent.com/5J9z0k5qd_1CR7j13p77NbIWPk2ZrtbImuizNPb9NK3SgMbnQlqrTGDHBRuOe16QPeQT4f1uw3yGZ9cxUP2UWYtCkZSQ_1aeKnIS1uSdxBtXC4x-vFdX1DDQddzvRlXKeZFEuih3ke-4X3nwYjDpPuo)
- 
-
 Let us Examine the differences between moths and butterflies.  
 
 Both moths and butterflies are lovely, but people often prefer butterflies over moths. Because of this confusion, I want to shine a little light on moths. My interest in months started when I was just looking online. And I found an adorable picture of a moth. Even though we later discovered it was a fake image, we still found many real images of cute moths. Let's explore what makes a moth a moth and not a butterfly.
+
+ ![](https://lh7-us.googleusercontent.com/5J9z0k5qd_1CR7j13p77NbIWPk2ZrtbImuizNPb9NK3SgMbnQlqrTGDHBRuOe16QPeQT4f1uw3yGZ9cxUP2UWYtCkZSQ_1aeKnIS1uSdxBtXC4x-vFdX1DDQddzvRlXKeZFEuih3ke-4X3nwYjDpPuo)
+
+
+
 
 Body
 ----
