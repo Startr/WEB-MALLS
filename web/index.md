@@ -4,8 +4,6 @@ title: My Home Page
 description: This is my home page
 ---
 
-Hi this is my page-it's still under develompment but you can still look at it. 
-
 <pre style="--bg:white">
 ⬜🟨🟨🟨🟨🟨⬜
 🟨🟨🟨🟨🟨🟨🟨
@@ -15,6 +13,8 @@ Hi this is my page-it's still under develompment but you can still look at it.
 🟨🟨⬛⬛⬛🟨🟨
 ⬜🟨🟨🟨🟨🟨⬜
 </pre>
+
+Hi this is my page-it's still under develompment but you can still look at it. 
 
 I like building with startr's Snap!
 [Check it out and try making a game](https://snap.startr.cloud/). 
