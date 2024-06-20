@@ -12,6 +12,7 @@ I'll share my creations with you soon
 
 I'm also looking into a collaborating with the development of Snap!
 
+<pre>
 ⬜🟨🟨🟨🟨🟨⬜
 🟨🟨🟨🟨🟨🟨🟨
 🟨⬛🟨🟨🟨⬛🟨
@@ -19,6 +20,7 @@ I'm also looking into a collaborating with the development of Snap!
 🟨⬛🟨🟨🟨⬛🟨
 🟨🟨⬛⬛⬛🟨🟨
 ⬜🟨🟨🟨🟨🟨⬜
+<pre/>
 
 [Post](/23-07-19)
 
