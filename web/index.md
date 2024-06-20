@@ -22,7 +22,7 @@ I'm also looking into a collaborating with the development of Snap!
 🟨🟨⬛⬛⬛🟨🟨
 ⬜🟨🟨🟨🟨🟨⬜
 
-<pre/>
+</pre>
 
 [Post](/23-07-19)
 
