@@ -4,10 +4,13 @@ title: My Home Page
 description: This is my home page
 ---
 
-Hi and hello to everybody. 
+Hi this is my page-it's still under develompment but you can still look at it. 
 
-I like building with Robot in a Can's Snap!
-[Check it out and try making a game](https://snap.robotinacan.com/courses/snaps/blank/). I'll share my creations with you soon and I'm looking into collaborating with the development of Snap!
+I like building with startr's Snap!
+[Check it out and try making a game](https://snap.startr.cloud/). 
+I'll share my creations with you soon 
+
+I'm also looking into a collaborating with the development of Snap!
 
 [Another Post](/23-07-19)
 
