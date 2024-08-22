@@ -12,23 +12,23 @@
         }
         </style>
     </head>
-    <body style="
+    <body style="--d:flex;
         --m: auto 0;
-        --size:150%"
-        >
+        --size:150%
+        --fd:column;
+        ">
         <header style="--bg:deepskyblue">
             <h1>{{ title }}</h1>
         </header>
-        <section>
+        <section style="--fg:3">
             <div style="--shadow: 7; --p: 0.6em">
                 <p>{{ description }}</p>
                 {{ content | safe }}
             </div>
-            <div style="--cs:all">
-                <p>© 2024 Malls.live and Startr LLC</p>
-                <a href="https://malls.live">Go Home</a>
-            </div>
         </section>
-
+        <footer>
+            <p>© 2024 Malls.live and Startr LLC</p>
+            <a href="https://malls.live">Go Home</a>
+        </footer>
     </body>
 </html>
