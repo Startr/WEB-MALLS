@@ -12,18 +12,20 @@
         }
         </style>
     </head>
-    <body 
-        style="--size:150%">
+    <body style="
+        --m: auto 0;
+        --size:150%"
+        >
         <header style="--bg:deepskyblue">
             <h1>{{ title }}</h1>
         </header>
-        <section style="--cc: 1; --cc-sm: 2;">
+        <section>
             <div style="--shadow: 7; --p: 0.6em">
                 <p>{{ description }}</p>
                 {{ content | safe }}
             </div>
             <div style="--cs:all">
-                <p>© 2023 Malls.live and Startr LLC</p>
+                <p>© 2024 Malls.live and Startr LLC</p>
                 <a href="https://malls.live">Go Home</a>
             </div>
         </section>
