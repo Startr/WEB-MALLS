@@ -1,11 +1,10 @@
 ---
 layout: mylayout.njk
 title: My Home Page
-description: This is my home page
+
 ---
 
-:D
-
+●⩊●
 Hi this is my page,it's still under develompment but you can still look at it. 
 
 I like building with startr's Snap!
