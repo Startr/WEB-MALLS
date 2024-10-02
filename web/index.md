@@ -1,7 +1,6 @@
 ---
-layout: mylayout.njk
+layout: layouts/blog.njk
 title: My Home Page
-
 ---
 
 ●⩊●

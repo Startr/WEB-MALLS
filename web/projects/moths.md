@@ -1,5 +1,5 @@
 ---
-layout: mylayout.njk
+layout: layouts/blog.njk
 title: 🌜Moths🦋
 ---
 ## 🌜moonlight butterfly🦋

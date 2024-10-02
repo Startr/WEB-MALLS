@@ -1,0 +1,53 @@
+
+{% for post in collections.AI  | reverse %}
+<!-- CTA Section -->
+{% capture cycle_animation %}{% cycle 'rotateInUpLeft', 'rotateInUpRight' %}{% endcapture %}
+<section class="wow {{ cycle_animation }}" style="--bg:white;
+	  --p:3em;
+	  --br:12px;
+	  --shadow:5;
+	  outline:#e6e6e6 dashed;
+	  outline-offset: -0.6em;
+	  --b-width:2px;
+	  --w:80%;
+	  --maxw:66rem;
+	  --ai:center;">
+	<h2 style="--c:#333; --size:2rem; --ta:center;">
+		<!-- all varables we can access -->
+
+		{{ forloop.index  }}
+
+		{{ loop.index }}
+		{% if post.data.title %}
+		{{ post.data.title }}{% else %}
+		<code>{{ post.url }}</code>
+		{% endif %}
+	</h2>
+	{% if post.data.summary %}
+	<p style="--c:#555; --size:1.125rem; --ta:center; --lh:1.8">
+		{{ post.data.summary }}
+	</p>{% endif %}
+	<div style="--d:flex; --jc:center; --mt:1.5em;">
+		<a href="{{ post.url }}" style="--bg:#ffe6cc; --c:#333; --p:0.75em 1.5em; --radius:5px; --shadow:1;">Read More
+			→</a>
+	</div>
+	<!-- Loop index 
+	<p>Loop index: {{ loop.index }}
+		<!-- Post number 
+		{{forloop.index}}<br>
+		{% assign mod = forloop.index | modulo: 2 %}
+		{% if mod == 0 %}
+			even
+		{% else %}
+			odd
+		{% endif %}
+		<br>-->
+	</p>
+	<!-- Post date
+	<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">
+		{{ post.date }}
+	</time> -->
+</section>
+<!-- Vertical connecting dashed line -->
+<div class="wow fadeIn" style="--h:100px; --b:#e6e6e6 dashed; --ml:auto; --mr:auto;"></div>
+{% endfor %}

@@ -1,0 +1,103 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sage Education</title>
+<!-- Social Card-->
+<meta property="og:title" content="Sage Education" />
+<meta property="og:description"
+  content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
+<meta property="og:image" content="https://sage.education/social-card.png" />
+<meta property="og:url" content="https://sage.education" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sage Education" />
+<meta name="twitter:description"
+  content="Sage Education is a platform that provides a wide range of educational resources for students and teachers." />
+<meta name="twitter:image" content="https://sage.education/social-card.png" />
+<!-- Include WOW.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+  integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Smooth Scroll Script -->
+<script>
+  new WOW().init();
+
+  // Function to enable smooth scroll
+  function smoothScrollLinks() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  }
+
+  // Initialize smooth scrolling on first load
+  (document.readyState === "loading") ? document.addEventListener('DOMContentLoaded', smoothScrollLinks) : smoothScrollLinks();
+</script>
+
+<!-- Include Swup (last, to avoid interference with initializations) -->
+<script src="https://unpkg.com/swup@4"></script>
+<script>
+  const swup = new Swup();
+
+  // Reapply smooth scrolling after Swup content is replaced
+  swup.on('contentReplaced', smoothScrollLinks);
+</script>
+
+
+<!-- Include Startr Style CSS -->
+<link rel="stylesheet" href="https://startr.style/style.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+  integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    --bgc: hsla(0deg 100% 54.48% / 66%);
+    --grad: 50deg;
+    --grad-color: hsl(273, 100%, 55%);
+    --c: #d72263;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background-image: linear-gradient(var(--grad), hsl(235, 100%, 55%) 0%, var(--grad-color) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  blockquote {
+    p {
+      margin: auto;
+    }
+  }
+
+  html.is-changing .transition-fade {
+    view-transition-name: main;
+  }
+
+  ::view-transition-old(main) {
+    animation: fade 0.5s ease-in-out both;
+  }
+
+  ::view-transition-new(main) {
+    animation: fade 0.5s ease-in-out both reverse;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+</style>

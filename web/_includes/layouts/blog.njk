@@ -1,0 +1,53 @@
+---
+layout: layouts/base.html
+---
+<section class="wow fadeIn" style="
+	--m: auto;	
+	--bg:white;
+	--p:3em;
+	--br:12px;
+	--shadow:5;
+	outline:#e6e6e6 dashed;
+	outline-offset: -0.6em;
+	--b-width:2px;
+	--w:80%;
+	--maxw:66rem;
+	--ai:center;">
+	<h1>{{ title }}</h1>
+
+	<ul class="post-metadata">
+		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+		{%- if page.data.author %}<li>Author: {{ page.data.author }}</li>{%- endif %}
+		{%- for tag in tags | filterTagList %}
+		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<li style="--ml:2rem"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
+		</li>
+		{%- endfor %}
+	</ul>
+
+	{{ content | safe }}
+</section>
+{%- if collections.all %}
+<section class="wow fadeIn" style="
+	  --m: 2rem auto;	
+	  --bg:white;
+	  --p:3em;
+	  --br:12px;
+	  --shadow:5;
+	  outline:#e6e6e6 dashed;
+	  outline-offset: -0.6em;
+	  --b-width:2px;
+	  --w:40%;
+	  --maxw:44rem;
+	  --ai:center;">
+	{%- set previousPost = collections.all | getPreviousCollectionItem %}
+	{%- set nextPost = collections.all | getNextCollectionItem %}
+	{%- if nextPost or previousPost %}
+	<ul class="links-nextprev">
+		{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
+		{% endif %}
+		{%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+	</ul>
+	{%- endif %}
+</section>
+{%- endif %}

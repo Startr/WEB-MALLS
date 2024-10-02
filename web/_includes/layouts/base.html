@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language }}">
+
+  <head>
+    {% include "./base/head.html" %}
+  </head>
+
+  <body
+  style="--bga:fixed; --bg:lightblue url('/static/star_and_moon.svg'); --d:flex; --fd:column; --minh: 100vh">
+  <!-- partial:index.partial.html -->
+    <header
+      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem)); --z: 1000">
+      <a href="#skip" style="--d: none">Skip to main content</a>
+      <a class="home-link" style="--d: none" href="/">{{ metadata.title }}</a>
+      {% include "./base/nav_en.html" %}
+    </header>
+
+    <main style="--z: 10; --fg:2; --mt:5rem" id="swup" class="transition-fade">
+      {% if title and big_image %}
+      <!--<section aria-roledescription="Title Card" 
+        class="wow fadeIn"
+        style="
+          --w-xl: calc(100vw + 1rem);
+          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));">
+        <figure style="--h: 66vh; --br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
+          <img src="{{ big_image }}" alt="sample" />
+          <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
+            <h1 style="{% if big_image_offset %}--mt:{{ big_image_offset }};{% endif %} --c: white; --ts: black 1px 0 10px">{{ title }}</h1>
+            <span style="--c: white; --ts: black 1px 0 10px"> {{ subtitle }} </span>
+          </figcaption>
+        </figure>
+      </section>-->
+      {% endif %}
+      <section aria-roledescription="Main Content" style="
+          --p: 0 1rem;">{{ content }}</section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="
+        --w-xl: calc(100vw + 1rem);
+        --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));
+        --bg: #333;
+        --c: white;
+        --p: 20px;
+      ">
+      {% include "./base/footer.html" %}
+    </footer>
+  </body>
+
+</html>
