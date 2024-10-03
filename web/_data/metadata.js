@@ -1,11 +1,11 @@
 module.exports = {
-	title: "Sage Education",
-	url: "https://sage.education",
+	title: "malls.live",
+	url: "https://malls.live/",
 	language: "en",
-	name: "Sage Education",
-	description: "Sage Education for all your educational needs",
+	name: "malls.live",
+	description: "malls.live a litle website",
 	author: {
-		name: "",
+		name: "M",
 		email: "youremailaddress@example.com",
 		url: "https://example.com/about-me/"
 	}
