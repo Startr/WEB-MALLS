@@ -4,7 +4,8 @@ layout: layouts/base.html
 <section class="wow fadeIn" style="
 	--m: auto;	
 	--bg:white;
-	--p:3em;
+	--p:1.2em;
+	--p-sm:3em;
 	--br:12px;
 	box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
 	outline:#e6e6e6 dashed;
@@ -15,12 +16,13 @@ layout: layouts/base.html
 	--ai:center;">
 	<h1>{{ title }}</h1>
 
-	<ul class="post-metadata">
+	<ul class="post-metadata"
+	style="--lis: none">
 		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
 		{%- if page.data.author %}<li>Author: {{ page.data.author }}</li>{%- endif %}
 		{%- for tag in tags | filterTagList %}
 		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-		<li style="--ml:2rem"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
+		<li style="--ml:2rem"><a href="{{ tagUrl }}" class="post-tag" style="--d:inline-block">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
 		</li>
 		{%- endfor %}
 	</ul>
@@ -29,9 +31,10 @@ layout: layouts/base.html
 </section>
 {%- if collections.all %}
 <section class="wow fadeIn" style="
+	  --d:flex;
 	  --m: 2rem auto;	
 	  --bg:white;
-	  --p:3em;
+	  --p:1em;
 	  --br:12px;
 	  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
 	  outline:#e6e6e6 dashed;
@@ -43,10 +46,19 @@ layout: layouts/base.html
 	{%- set previousPost = collections.all | getPreviousCollectionItem %}
 	{%- set nextPost = collections.all | getNextCollectionItem %}
 	{%- if nextPost or previousPost %}
-	<ul class="links-nextprev">
-		{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
+	<ul class="links-nextprev"
+		style="
+		--lis:none;
+		--w:min-content;
+		--w-sm:100%;
+		--p:0;
+		--p-sm:2rem;
+		--m:auto;
+		--ta:center;
+		">
+		{%- if previousPost.data.title %}<li>Previous: <a style="--d:inline-block"href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
 		{% endif %}
-		{%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+		{%- if nextPost.data.title %}<li>Next: <a style="--d:inline-block" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
 	</ul>
 	{%- endif %}
 </section>
