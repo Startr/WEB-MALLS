@@ -3,7 +3,7 @@ layout: layouts/blog.njk
 title: My Home Page
 ---
 
-●⩊●
+![Kitten](https://image.startr.cloud/800x401/kitten){style="--br:2rem"}
 
 Hi this is my page,it's still under develompment but you can still look at it. 
 
