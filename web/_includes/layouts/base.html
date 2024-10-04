@@ -5,13 +5,13 @@
     {% include "./base/head.html" %}
   </head>
 
-  <body
-  style="--bga:fixed; 
+  <body style="--bga:fixed; 
   --bg: oklch(81% 27% 293deg)
   url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjYuNTE3IiBoZWlnaHQ9IjYyLjc0NCIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNjYuNTE3IDYyLjc0NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxwYXRoIGQ9Im0wIDc1LjA3N3YtNzUuMDc3aDc4Ljg1djc1LjA3N3oiIGZpbGw9IiM5YWYiIHN0cm9rZS13aWR0aD0iLjM1Mzc4IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsIi8+CiA8ZyB0cmFuc2Zvcm09InJvdGF0ZSgtMTUuNDYxIDE3NS43OSAxNjA4LjIpIiBmaWxsPSIjNzM4YmZmIiBzdHJva2Utd2lkdGg9Ii41Ij4KICA8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMS43NDIgOC43MzQ2KSIgZD0ibTQ1Ni44MiAzMi4zNTVjLTIuMzYyOC0zLjk0Ni0xLjA3OTQtOS4wNjAzIDIuODY2Ni0xMS40MjMgMy4zODU0LTIuMDI3MSA3LjYzMDYtMS4zNzA1IDEwLjI2MSAxLjM0ODctMS41NDA4LTEuMTM0My0zLjY3MzYtMS4zMDIzLTUuNDE3OS0wLjI1NzgzLTIuMzE4OCAxLjM4ODUtMy4wNzMgNC4zOTM5LTEuNjg0NSA2LjcxMjhzNC4zOTM5IDMuMDczIDYuNzEyOCAxLjY4NDVjMS43NTI2LTEuMDQ5NSAyLjYxMTQtMy4wMjI2IDIuMzI2OC00LjkyNDkgMS4xODE1IDMuNjEzNC0wLjI0MTg5IDcuNjkwOS0zLjY0MTIgOS43MjY0LTMuOTQ2IDIuMzYyOC05LjA2MDMgMS4wNzk0LTExLjQyMy0yLjg2NjZ6IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsIi8+CiAgPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuNzQyIDguNzM0NikiIGQ9Im00MjIuOTQgNjEuMDgxYy0yLjM2MjgtMy45NDYtMS4wNzk0LTkuMDYwMyAyLjg2NjYtMTEuNDIzIDMuMzg1NC0yLjAyNzEgNy42MzA2LTEuMzcwNSAxMC4yNjEgMS4zNDg3LTEuNTQwOC0xLjEzNDMtMy42NzM2LTEuMzAyMy01LjQxNzktMC4yNTc4Mi0yLjMxODggMS4zODg1LTMuMDczIDQuMzkzOS0xLjY4NDUgNi43MTI4IDEuMzg4NSAyLjMxODggNC4zOTM5IDMuMDczIDYuNzEyOCAxLjY4NDUgMS43NTI2LTEuMDQ5NSAyLjYxMTQtMy4wMjI2IDIuMzI2OC00LjkyNDkgMS4xODE1IDMuNjEzNC0wLjI0MTg5IDcuNjkwOS0zLjY0MTIgOS43MjY0LTMuOTQ2IDIuMzYyOC05LjA2MDMgMS4wNzk0LTExLjQyMy0yLjg2NjZ6IiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsIi8+CiAgPHBhdGggdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuNzQyIDguNzM0NikiIGQ9Im00NjQuMDEgNjIuMzU3cy0wLjg4MzgzLTQuNjg4NC0yLjE2NzctNS45MTdjLTEuMjgyOC0xLjIyNzYtNS41MzIyLTEuNDUxNy01LjUzMjItMS40NTE3czQuNjY0LTAuOTc5MyA1LjkzNzMtMi4zMDk4YzEuMTc1LTEuMjI3OCAxLjQzMTQtNS4zOSAxLjQzMTQtNS4zOXMwLjUzMjgzIDQuMDEyMiAxLjgxMTcgNS4yMzYxYzEuMjg3NyAxLjIzMjMgNS44ODgyIDIuMTMyNiA1Ljg4ODIgMi4xMzI2cy00LjQ1NzMgMC4zNjgwMy01LjYyMjUgMS41ODU2Yy0xLjI4MDIgMS4zMzc3LTEuNzQ2MiA2LjExNDMtMS43NDYyIDYuMTE0M3oiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTpub3JtYWwiLz4KICA8cGF0aCB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMS43NDIgOC43MzQ2KSIgZD0ibTQzMC4yNiAzMy4xMjVzLTAuODgzODMtNC42ODg0LTIuMTY3Ny01LjkxN2MtMS4yODI4LTEuMjI3Ni01LjUzMjItMS40NTE3LTUuNTMyMi0xLjQ1MTdzNC42NjQtMC45NzkzIDUuOTM3My0yLjMwOThjMS4xNzUtMS4yMjc4IDEuNDMxNC01LjM5IDEuNDMxNC01LjM5czAuNTMyODMgNC4wMTIyIDEuODExNyA1LjIzNjFjMS4yODc3IDEuMjMyMyA1Ljg4ODIgMi4xMzI2IDUuODg4MiAyLjEzMjZzLTQuNDU3MyAwLjM2ODAzLTUuNjIyNSAxLjU4NTZjLTEuMjgwMiAxLjMzNzctMS43NDYyIDYuMTE0My0xLjc0NjIgNi4xMTQzeiIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOm5vcm1hbCIvPgogPC9nPgo8L3N2Zz4K')
   ;
+  background-attachment: scroll;
   --d:flex; --fd:column; --minh: 100vh">
-  <!-- partial:index.partial.html -->
+    <!-- partial:index.partial.html -->
     <header
       style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem)); --z: 1000">
       <a href="#skip" style="--d: none">Skip to main content</a>
@@ -20,21 +20,6 @@
     </header>
 
     <main style="--z: 10; --fg:2; --mt:5rem" id="swup" class="transition-fade">
-      {% if title and big_image %}
-      <!--<section aria-roledescription="Title Card" 
-        class="wow fadeIn"
-        style="
-          --w-xl: calc(100vw + 1rem);
-          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));">
-        <figure style="--h: 66vh; --br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
-          <img src="{{ big_image }}" alt="sample" />
-          <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
-            <h1 style="{% if big_image_offset %}--mt:{{ big_image_offset }};{% endif %} --c: white; --ts: black 1px 0 10px">{{ title }}</h1>
-            <span style="--c: white; --ts: black 1px 0 10px"> {{ subtitle }} </span>
-          </figcaption>
-        </figure>
-      </section>-->
-      {% endif %}
       <section aria-roledescription="Main Content" style="
           --p: 0 1rem;">{{ content }}</section>
     </main>
