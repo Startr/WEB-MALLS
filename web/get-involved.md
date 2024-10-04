@@ -9,14 +9,14 @@ If you're interested in getting involved with the project, there are a number of
 
 Sign up to my newsletter to stay up to date with the latest news and events.
 
-<form style="--x:100;">
+<form style="--x:100; --d:flex; --fd:column">
   <label>Username
     <input type="text" placeholder="John">
   </label>
   <label>Password
     <input type="password" placeholder="Dow">
   </label>
-  <button style="float:right">Sign Up</button>
+  <button style="--w:20%; --minw:fit-content; --as:flex-end; --m:1rem 0">Sign Up</button>
   </form>
 
 
@@ -26,14 +26,14 @@ Request access to my private https://startr.space community to connect with othe
 
 <!-- startr.space invite form -->
 
-<form style="--x:100;">
+<form style="--x:100;  --d:flex; --fd:column">
   <label>Username
     <input type="text" placeholder="John">
   </label>
   <label>Password
     <input type="password" placeholder="Dow">
   </label>
-  <button class="red" style="float:right">Request Secret Access</button>
+  <button class="red" style="--w:20%; --minw:fit-content; --as:flex-end; --m:1rem 0">Secret Access</button>
 </form>
 
 Thank you for your interest in the project. I look forward to working with you.
