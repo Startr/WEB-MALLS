@@ -7,5 +7,6 @@
                 "dbaeumer.vscode-eslint"
             ]
         }
-    }
+    },
+    "postCreateCommand": "git config --global http.sslVerify false && git config --global pull.rebase false"
 }
