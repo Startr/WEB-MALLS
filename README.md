@@ -13,4 +13,4 @@ Hello! it's me Malls. If it's your first time here, hi! We'll be talking aboutL 
 
 [I live in Canada but I´m going to the azores](https://github.com/Startr/WEB-MALS/assets/26581192/53ea16bb-1806-4dab-8a92-be24e6e1af7e)
 
-I live in canada, but I'm going to Azores in the middle of the atlantic ocean, it's an archipelago I'm going to the island called Faial, I hope to share my adventures with you.
+I'm from Canada, but I'm going to Azores in the middle of the atlantic ocean, it's an archipelago I'm going to the island called Faial, I hope to share my adventures with you.
