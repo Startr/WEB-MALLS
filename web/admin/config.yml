@@ -10,9 +10,9 @@ backend:
   name: github
   repo: Startr/WEB-MALLS
   branch: master # Branch to update (optional; defaults to master)
-  site_domain: https://malls.live/
-  base_url: https://malls.live/
-  auth_endpoint: /api/auth
+  #site_domain: https://malls.live/
+  #base_url: https://malls.live/
+  #auth_endpoint: /api/auth
 
 local_backend:
   url: http://127.0.0.1:8081/api/v1 # URL to the local backend
