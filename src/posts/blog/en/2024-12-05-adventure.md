@@ -12,9 +12,6 @@ summary: >-
   going .
 
 
-  I'm aiming for a simple, honest style that captures the moments of wonder and uncertainty I'm creating ⏱️. The writing's a mix of explorations, discoveries, and encounters with strange things .
-
-
   These chapters are just the beginning, a rough mapping of where I want to go with this story 🗺️.
 ---
 # Chapter 1
