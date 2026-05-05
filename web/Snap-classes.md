@@ -1,12 +1,10 @@
 ---
 layout: layouts/blog.njk
-title: steam-moon
+title: Snap! classes
 
 ---
 
-●⩊●
-
-Hello everyone in this (still under development) web page I am makeing a online education platform that talks mostly about snap but also some other things
+Hello everyone in this page I made a few classes mostly about snap but also about some other things
 
 [draw a square □](https://snap.startr.cloud/project?username=mcat2000&projectname=Square%21%3aD)
 
