@@ -14,5 +14,7 @@ I'll share my creations with you soon. I'm also looking into a collaborating wit
 
 [steam-moon](/23-07-19)
 
-If you want to reach me please drop me your contact info: <script type="text/javascript" src="//communication.openco.ca/form/generate.js?id=6"></script>
+If you want to reach me please [put your gmail in here](/web/get-involved.md) 
+
+<script type="text/javascript" src="//communication.openco.ca/form/generate.js?id=6"></script>
 
