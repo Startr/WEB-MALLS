@@ -12,9 +12,9 @@ I'm learning javascript, and html, but I'm more comfterbul in a visul based lagu
 I'll share my creations with you soon. I'm also looking into a collaborating with the development of Startr's Snap!
 
 
-[Snap! classes](/Snap-classes.md)
+[Snap! classes](Startr/WEB-MALLS/web/Snap-classes)
 
-If you want to reach me please [put your gmail in here](/get-involved.md) 
+If you want to reach me please [put your gmail in here](/get-involved) 
 
 <script type="text/javascript" src="//communication.openco.ca/form/generate.js?id=6"></script>
 
