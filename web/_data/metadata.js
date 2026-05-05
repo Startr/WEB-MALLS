@@ -1,5 +1,5 @@
 module.exports = {
-	title: "malls.live",
+	title: "Traveler's page",
 	url: "https://malls.live/",
 	language: "en",
 	name: "malls.live",
