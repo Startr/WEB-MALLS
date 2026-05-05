@@ -12,7 +12,7 @@ I'm learning javascript, and html, but I'm more comfterbul in a visul based lagu
 I'll share my creations with you soon. I'm also looking into a collaborating with the development of Startr's Snap!
 
 
-[Snap! classes](Startr/WEB-MALLS/web/Snap-classes)
+[Snap! classes](/Snap-classes)
 
 If you want to reach me please [put your gmail in here](/get-involved) 
 
