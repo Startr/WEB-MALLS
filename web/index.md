@@ -14,7 +14,5 @@ I'll share my creations with you soon. I'm also looking into a collaborating wit
 
 [Snap! classes](/Snap-classes)
 
-If you want to reach me please [put your gmail in here](/get-involved) 
-
-<script type="text/javascript" src="//communication.openco.ca/form/generate.js?id=6"></script>
+If you want to reach me please [put your gmail in here](/get-involved) <script type="text/javascript" src="//communication.openco.ca/form/generate.js?id=6"></script>
 
